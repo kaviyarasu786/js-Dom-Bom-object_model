@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+         
+        <h2>cm to inches</h2>
+        <label>Enter The Value<input type="text" id="input"></label>
+        <button type="submit" onclick="fun()">Submit</button>
+        <p id="res"></p>
+
+        <p id="con1">welcome to all</p>
+        <p id="con2"></p>
+
+        <p id="change1">hello this is my new webpage</p>
+        <p id="change2">Welcome to all</p>
+
+
+        <button onclick="btn()">Data</button>
+        <p id="datefun"></p>
+    <script>
+        //convert centimeter to inches
+            function fun()
+            {
+                let cmval=Number(document.getElementById("input").value)
+                let inchval=cmval/2.54;
+                let resu=document.getElementById("res").innerHTML="Inch value is: "+inchval.toFixed(2);
+            }
+//-----------------------------------------------------------------------------
+        
+        //find an element id name 
+
+             const first=document.getElementById("con1");
+             document.getElementById("con2").innerHTML="this is my office :"+ first.innerHTML;
+//-----------------------------------------------------------------------------
+
+
+        //changing the content :
+
+            document.getElementById("change1").innerHTML="Hai Dr";
+            document.getElementById("change2").innerHTML="jk"
+//-----------------------------------------------------------------------------
+        
+        //design
+            
+            document.getElementById("change1").style.color="green";
+            document.getElementById("change2").style.backgroundColor="gray";
+            document.getElementById("con1").style.fontFamily="arial";
+//-----------------------------------------------------------------------------
+
+        //Date
+            function btn()
+            {
+                document.getElementById("datefun").innerHTML=Date();
+//-----------------------------------------------------------------------------
+            }
+        // Browser object model 
+            function altermsg()
+            {
+                alert("welocme");
+            }
+            //altermsg();
+//-----------------------------------------------------------------------------
+
+        // confirm
+          function fullstack() {
+             let a = confirm("Are you sure you want to submit");
+
+            if (a == true) {
+                alert("Welcome to my page");
+             } else {
+                  alert("cancel");
+            }
+        }
+        //fullstack();
+//-----------------------------------------------------------------------------
+
+        //confirm2
+            function age()
+            {
+                let a=confirm("Fill the form and submit")
+                if(a==true)
+                {
+                    alert("Your Form is Submited");
+                }
+                else
+                {
+                    alert("Not Submit");
+                }
+            }
+            //age()
+//-----------------------------------------------------------------------------
+
+        //confirm3
+            function mark()
+            {
+                let x=confirm("Do you want to go office")
+                if(x==true)
+                {
+                    alert("please go");
+                }
+                else
+                {
+                    alert("Please Wait");
+                }
+            }
+           // mark();
+//-----------------------------------------------------------------------------
+        //prompt
+        function developer() {
+            let a = prompt("who am?");
+            alert("Thank you " + a);
+            }
+            //developer();
+//-----------------------------------------------------------------------------
+
+        function fs()
+        {
+            let x=prompt("What is your age");
+            alert("your age is "+ x);
+        }
+        //fs()
+//-----------------------------------------------------------------------------
+        function city()
+        {
+            let m=prompt("You City Name");
+            alert("Your city name is :"+m);
+        }
+        //city()
+//-----------------------------------------------------------------------------
+
+        function times()
+        {
+            setTimeout(function(){
+                alert("This page will disappear in within 1secounds");
+            },1000);
+        }
+        times();
+
+    
+
+  </script>
+</body>
+</html>
